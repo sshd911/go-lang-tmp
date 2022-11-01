@@ -1,0 +1,7 @@
+<h1>Top Page</h1>
+{{ range . }}
+<p>
+  <a href="/view/{{ . |html| }}">{{ . }}View</a>
+  <a href="/edit/{{ . |html| }}">{{ . }}Edit</a>
+</p>
+{{ end }}
